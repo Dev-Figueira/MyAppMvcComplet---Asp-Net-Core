@@ -1,0 +1,7 @@
+{
+	"projetcts": ["src", "sql" ],
+	"sdk":
+	{
+		"version": "2.2.207"
+	}
+}
