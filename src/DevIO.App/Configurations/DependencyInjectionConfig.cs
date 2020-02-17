@@ -1,0 +1,17 @@
+﻿using DevIO.App.Extensions;
+using DevIO.Business.Intefaces;
+using DevIO.Data.Context;
+using Microsoft.AspNetCore.Mvc.DataAnnotations;
+using Microsoft.Extensions.DependencyInjection;
+
+namespace DevIO.App.Configurations
+{
+    public static class DependencyInjectionConfig
+    {
+        public static IServiceCollection ResolveDependencies(this IServiceCollection services)
+        {
+            services.AddScoped<MyDbContext>();
+            return services;
+        }
+    }
+}

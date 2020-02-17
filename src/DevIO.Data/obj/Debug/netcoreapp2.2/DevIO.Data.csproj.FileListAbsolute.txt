@@ -9,3 +9,5 @@ C:\Users\rodrigo.ramalho\source\repos\MyAppMvcComplete\src\DevIO.Data\obj\Debug\
 C:\Users\rodrigo.ramalho\source\repos\MyAppMvcComplete\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Business.dll
 C:\Users\rodrigo.ramalho\source\repos\MyAppMvcComplete\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
 C:\Users\rodrigo.ramalho\source\repos\MyAppMvcComplete\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csproj.CopyComplete
+C:\Users\rodrigo.ramalho\source\repos\MyAppMvcComplete\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.runtimeconfig.json
+C:\Users\rodrigo.ramalho\source\repos\MyAppMvcComplete\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.runtimeconfig.dev.json
