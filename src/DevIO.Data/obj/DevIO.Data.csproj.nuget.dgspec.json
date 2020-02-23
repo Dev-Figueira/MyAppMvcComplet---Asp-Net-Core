@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Data\\DevIO.Data.csproj": {}
+    "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Data\\DevIO.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Business\\DevIO.Business.csproj": {
+    "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Business\\DevIO.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Business\\DevIO.Business.csproj",
         "projectName": "DevIO.Business",
-        "projectPath": "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Business\\DevIO.Business.csproj",
-        "packagesPath": "C:\\Users\\rodrigo.ramalho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Business\\obj\\",
+        "projectPath": "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "packagesPath": "C:\\Users\\Família-Figueira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Business\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rodrigo.ramalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Família-Figueira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,20 +56,17 @@
         }
       }
     },
-    "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Data\\DevIO.Data.csproj": {
+    "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Data\\DevIO.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Data\\DevIO.Data.csproj",
         "projectName": "DevIO.Data",
-        "projectPath": "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Data\\DevIO.Data.csproj",
-        "packagesPath": "C:\\Users\\rodrigo.ramalho\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Data\\obj\\",
+        "projectPath": "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Data\\DevIO.Data.csproj",
+        "packagesPath": "C:\\Users\\Família-Figueira\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\rodrigo.ramalho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Família-Figueira\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -85,8 +79,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Business\\DevIO.Business.csproj": {
-                "projectPath": "C:\\Users\\rodrigo.ramalho\\source\\repos\\MyAppMvcComplete\\src\\DevIO.Business\\DevIO.Business.csproj"
+              "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Business\\DevIO.Business.csproj": {
+                "projectPath": "C:\\Users\\Família-Figueira\\Desktop\\Meu Projeto\\MyAppMvcComplet---Asp-Net-Core\\src\\DevIO.Business\\DevIO.Business.csproj"
               }
             }
           }
@@ -112,7 +106,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[3.1.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
