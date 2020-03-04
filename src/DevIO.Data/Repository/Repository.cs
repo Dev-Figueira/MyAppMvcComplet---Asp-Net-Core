@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DevIO.Data.Repository 
 {
-    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity, new
+    public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity, new()
     {
         protected readonly MyDbContext Db;
         protected readonly DbSet<TEntity> DbSet;
