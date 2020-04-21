@@ -5,6 +5,10 @@
     <UserSecretsId>aspnet-DevIO.App-AE60F5A8-78CF-4575-8FFF-9B73438E7829</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Views\Fornecedores\_atualizarEndereco.cs" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="automapper.extensions.microsoft.dependencyinjection" Version="7.0.0" />
@@ -23,6 +27,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DevIO.Data\DevIO.Data.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\imagens\" />
   </ItemGroup>
 
 </Project>
