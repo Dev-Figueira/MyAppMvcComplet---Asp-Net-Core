@@ -13,7 +13,5 @@ namespace DevIO.App.Data
             : base(options)
         {
         }
-        public DbSet<DevIO.App.ViewModels.FornecedorViewModel> FornecedorViewModel { get; set; }
-        public DbSet<DevIO.App.ViewModels.ProdutoViewModel> ProdutoViewModel { get; set; }
     }
 }

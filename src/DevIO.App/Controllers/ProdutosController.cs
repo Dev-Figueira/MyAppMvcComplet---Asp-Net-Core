@@ -8,9 +8,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using DevIO.App.Extensions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DevIO.App.Controllers
 {
+    [Authorize]
     public class ProdutosController : BaseController
     {
         private readonly IProdutoRepository _produtoRepository;
@@ -26,13 +29,15 @@ namespace DevIO.App.Controllers
             _mapper = mapper;
         }
 
-        // GET: Produto
+        [AllowAnonymous]
+        [Route("lista-de-produtos")]
         public async Task<IActionResult> Index()
         {
             return View(_mapper.Map<IEnumerable<ProdutoViewModel>>(await _produtoRepository.ObterProdutosFornecedores()));
         }
 
-        // GET: Produto/Details/5
+        [AllowAnonymous]
+        [Route("dados-do-produto/{id:guid}")]
         public async Task<IActionResult> Details(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
@@ -45,7 +50,8 @@ namespace DevIO.App.Controllers
             return View(produtoViewModel);
         }
 
-        // GET: Produto/Create
+        [ClaimsAuthorize("Produto", "Adicionar")]
+        [Route("novo-produto")]
         public async Task<IActionResult> Create()
         {
             var produtoViewModel = await PopularFornecedores(new ProdutoViewModel());
@@ -53,6 +59,8 @@ namespace DevIO.App.Controllers
             return View(produtoViewModel);
         }
 
+        [ClaimsAuthorize("Produto", "Adicionar")]
+        [Route("novo-produto")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(ProdutoViewModel produtoViewModel)
@@ -72,7 +80,8 @@ namespace DevIO.App.Controllers
             return View(produtoViewModel);
         }
 
-        // GET: Produto/Edit/5
+        [ClaimsAuthorize("Produto", "Editar")]
+        [Route("editar-produto/{id:guid}")]
         public async Task<IActionResult> Edit(Guid id)
         {
             var produtoViewModel = await ObterProduto(id);
@@ -85,6 +94,8 @@ namespace DevIO.App.Controllers
             return View(produtoViewModel);
         }
 
+        [ClaimsAuthorize("Produto", "Editar")]
+        [Route("editar-produto/{id:guid}")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(Guid id, ProdutoViewModel produtoViewModel)
@@ -117,7 +128,8 @@ namespace DevIO.App.Controllers
             return RedirectToAction("Index");
         }
 
-        // GET: Produto/Delete/5
+        [ClaimsAuthorize("Produto", "Excluir")]
+        [Route("excluir-produto/{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var produto = await ObterProduto(id);
@@ -130,7 +142,8 @@ namespace DevIO.App.Controllers
             return View(produto);
         }
 
-        // POST: Produto/Delete/5
+        [ClaimsAuthorize("Produto", "Excluir")]
+        [Route("excluir-produto/{id:guid}")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(Guid id)

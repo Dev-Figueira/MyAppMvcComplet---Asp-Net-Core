@@ -34,4 +34,21 @@
     <Folder Include="wwwroot\imagens\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Compile Update="Projeto.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Projeto.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Update="Projeto.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Projeto.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>
